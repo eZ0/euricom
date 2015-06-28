@@ -1,0 +1,42 @@
+/*body {
+  font-family: 'Open Sans', sans-serif;
+}*/
+
+.photo{
+  width: 220px;
+}
+
+p {
+  display: inline-block;
+}
+.team {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.phone{
+  color: #0549CF;
+}
+.phone:hover{
+  color: #0588CF;
+  cursor: pointer;
+}
+
+/*Header*/
+.welcome {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/*Clearfix*/
+.clearfix::before, .clearfix::after {
+  display:table;
+  line-height:0;
+  content:"";
+}
+
+.clearfix::after {
+  clear: both;
+}
