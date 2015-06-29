@@ -1,14 +1,12 @@
-/*body {
-  font-family: 'Open Sans', sans-serif;
-}*/
-
 .photo{
   width: 220px;
   margin-bottom: 20px;
 }
 
-p {
-  display: inline-block;
+p, p.ng-binding {
+padding: 0;
+margin: 0;
+line-height: 0.3em;
 }
 .team {
   display: block;
@@ -28,16 +26,5 @@ p {
 /*Header*/
 .welcome {
   text-align: center;
-  padding-bottom: 50px;
-}
-
-/*Clearfix*/
-.clearfix::before, .clearfix::after {
-  display:table;
-  line-height:0;
-  content:"";
-}
-
-.clearfix::after {
-  clear: both;
+  padding: 0px 20px 50px;
 }

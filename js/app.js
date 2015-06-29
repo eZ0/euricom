@@ -23,7 +23,19 @@ teamApp.controller("teamController", function getTeam($scope, $http){
 		error(function(data, status, headers, config) {
 		// log error
 		});
-	$scope.sendSMS = function(){
-		console.log("clicked!");
+	$scope.sendSMS = function(phone){
+		var apikey = 'CIboeuspXb';
+		var url="http://bootcamp-challenge.herokuapp.com/api/send-sms?apiKey="+apikey;
+		var text = 'Yes, I am ready to do my presentation. You can find my solution at: ksenia.be/euricom';
+
+		this.phone = phone;
+
+		$http.post(url, {'username': 'msdn', 'password': 'bootcamp', 'text': text, 'destination': phone).
+		success(function(data, status, headers, config) {
+				
+		}).
+		error(function(data, status, headers, config) {
+		// log error
+		});
 	}
 });
