@@ -1,30 +1,37 @@
+body{
+	transition: 0.3s all ease-in;
+}
 .photo{
-  width: 220px;
-  margin-bottom: 20px;
+	width: 220px;
+	margin-bottom: 20px;
 }
 
 p, p.ng-binding {
-padding: 0;
-margin: 0;
-line-height: 0.3em;
+	padding: 0;
+	margin: 0;
+	line-height: 0.3em;
 }
 .team {
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  text-align: center;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	transition: 0.3s all ease-in;
 }
 
 .phone{
-  color: #0549CF;
+	color: #0549CF;
 }
 .phone:hover{
-  color: #0588CF;
-  cursor: pointer;
+	color: #0588CF;
+	cursor: pointer;
 }
 
 /*Header*/
 .welcome {
-  text-align: center;
-  padding: 0px 20px 50px;
+	text-align: center;
+	padding: 0px 20px 50px;
+}
+.col-lg-3 {
+	padding-bottom:  30px;
 }
