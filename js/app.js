@@ -1,6 +1,7 @@
 // Initializing our app and passing in dependencies
 var teamApp = angular.module("teamApp", []);
 
+
 //custom phone formatting
 teamApp.filter('phoneNumber', function() {
 	return function(value) {
@@ -25,17 +26,17 @@ teamApp.controller("teamController", function getTeam($scope, $http){
 		});
 	$scope.sendSMS = function(phone){
 		var apikey = 'CIboeuspXb';
-		var url="http://bootcamp-challenge.herokuapp.com/api/send-sms?apiKey="+apikey;
-		var text = 'Yes, I am ready to do my presentation. You can find my solution at: ksenia.be/euricom';
+		var url = "http://bootcamp-challenge.herokuapp.com/api/send-sms?apiKey="+apikey;
+		var smstext = 'Yes, I am ready to do my presentation. You can find my solution at: ksenia.be/euricom';
 
 		this.phone = phone;
 
-		$http.post(url, {'username': 'msdn', 'password': 'bootcamp', 'text': text, 'destination': phone).
-		success(function(data, status, headers, config) {
-				
-		}).
-		error(function(data, status, headers, config) {
-		// log error
-		});
+		// $http.post(url, {username: 'msdn', password: 'bootcamp', text: smstext, destination: phone).
+		// success(function(data, status, headers, config) {
+		// //load success message	
+		// }).
+		// error(function(data, status, headers, config) {
+		// // log error
+		// });
 	}
 });

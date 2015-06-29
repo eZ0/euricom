@@ -24,17 +24,9 @@
 		<h2>Hi! We are Euricom!</h2>
 		<h3>We are a team that will lead you through your Bootcamp!</h3>
 	</header>
+	
+	<div ng-include src="'partials/teamview.html'"></div>
 
-	<div class="container team" ng-controller="teamController as team">
-		<div class="row">
-			<div class="col-lg-3" ng-repeat="member in members">
-				<img class="photo img-circle" src="{{member.pic}}" alt="{{member.title}}"></br>
-				<p class="phone" ng-click="sendSMS(member.phone)"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> {{member.phone | phoneNumber}}</p></br>
-				<p>{{member.firstName}} {{member.name}},</p></br>
-				<p>{{member.title}}</p>
-			</div>
-		</div>
-	</div>
 
 	<!--  js --> 
 	<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> --> 
